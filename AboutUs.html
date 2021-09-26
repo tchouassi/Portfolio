@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <nav>
+            <a href="index.html" class="logo">FW</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html" class="active">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+   
+    <section id="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <h2>Freelancing Web Design Services</h2>
+            <p>Future Web was founded by Roland Tchouassi, a University Graduate. He studied with the Univesity of South Africa and also obtained a Certificate in Web Design with the University of Michigan. Feel free to follow us on social medias and checkout our super services!!!</p>
+        </div>   
+        <div class="about-model">
+            <img src="images/IMG0.png" alt="roland">
+        </div>          
+    </section>
+   
+    <script src="js/Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <nav>
+            <a href="index.html" class="logo">FW</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Services.html" class="active">Services</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+    
+   
+    <section id="services">
+        <div class="s-heading">
+            <h1>Services</h1>
+            <p>Future Web provides the following:</p>
+            <p>UI/UX Design</p>
+            <p>Websites Development and Improvements</p>
+            <p>Search Egine Optimisation of websites</p>
+        </div>
+        <div class="s-b-container">
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Front-End</div>
+                   <img src="images/uiux.jpg" alt="Front-End">
+                </div>
+                <div class="s-b-text">
+                    <a href="Contact.html">UI & UX designs for both websites and mobile devices</a>
+                </div>
+            </div>
+            <div class="s-box">
+                    <div class="s-b-img">
+                        <div class="s-type">Code-Testing</div>
+                       <img src="images/codetesting.jpg" alt="Code-Testing">
+                    </div>
+                    <div class="s-b-text">
+                        <a href="Contact.html">Websites Development and improvements for better accessibility and responsiveness across multiple platforms.</a>
+                    </div>
+            </div>
+            <div class="s-box">
+                    <div class="s-b-img">
+                        <div class="s-type">SEO</div>
+                       <img src="images/seo.jpg" alt="SEO">
+                    </div>
+                    <div class="s-b-text">
+                        <a href="Contact.html">We will increase traffic to your website through Search Engine Optimization.</a>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+    
+    <script src="js/Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+    </script>
+</body>
+</html>

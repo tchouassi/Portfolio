@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+        <nav>
+            <a href="index.html" class="logo">FW</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        
+        
+   
+
+    <section id="contact-btn">
+        <h1>The project you are working on took you to this page. So why wait... get in touch and let's make the magic happen.</h1>
+        <a href="Contact.html">Contact Us</a>
+        <h1>Cell: +2779 289 4934</h1>
+        <h1>Email: alapagetech@gmail.com</h1>
+    </section>
+    <script src="js/Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+    </script>
+</body>
+</html>

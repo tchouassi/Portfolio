@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="main">
+        <header>
+        <nav>
+            <a href="index.html" class="logo">FW</a>
+            <div class="toggle"></div>
+            <ul class="menu">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </header>
+        <div class="name">
+            <p>Hello</p>
+            <h1>I'm Roland</h1>
+            <p class="details">Web Designer & Developer. I founded Future Web to freelance my services to businesses and individuals so that they can increase their customers satisfaction through beautiful, accessible and responsive web applications.
+            I obtained a Certificate in Web Design with the University of Michigan. I am fluent in French and English, and most of all I am here to help.</p>
+        </div>
+        <footer>
+        <div class="social">
+            <a href="https://web.facebook.com/roland.tchouassi/" ><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/rtchouas" ><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" ><i class="fab fa-instagram"></i></a>
+            <a href="www.linkedin.com/in/roland-tchouassi-nguegoue-40ab35124" ><i class="fab fa-linkedin"></i></a>
+        </div>
+        </footer>
+    </section>
+
+    <script src="js/Jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.toggle').click(function(){
+                $('.toggle').toggleClass('active')
+                $('nav ul').toggleClass('active-menu')
+            })
+        })
+    </script>
+</body>
+</html>
